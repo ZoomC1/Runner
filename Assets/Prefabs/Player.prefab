@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 515157511829066917}
   - component: {fileID: 5599709629828123078}
   - component: {fileID: 6162550106262185858}
-  - component: {fileID: 3915487576901588801}
-  - component: {fileID: -315424872536939286}
+  - component: {fileID: 3504682571406633405}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -109,7 +108,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &6162550106262185858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +126,8 @@ MonoBehaviour:
   laneDistance: 2
   slideDuration: 1
   slideScale: {x: 1, y: 0.5, z: 1}
---- !u!54 &3915487576901588801
+  slideColliderHeight: 1
+--- !u!54 &3504682571406633405
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,31 +152,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!143 &-315424872536939286
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9059866371689493463}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}

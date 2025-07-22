@@ -1,11 +1,10 @@
-// GameManager.cs
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
     public Transform startPosition;
-    public static GameObject Player { get; private set; } // Static reference
+    public static GameObject Player { get; private set; }
 
     void Start()
     {
